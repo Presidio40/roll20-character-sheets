@@ -1,0 +1,133 @@
+<!-- Original Dungeons & Dragons Character Sheet CSS */ -->
+<!-- Version 1.5.1 -->
+
+  <div class="odd">
+
+    <h2>Coeurs&nbsp;vaillants</h2>
+
+    <!-- Top Section, Characteristics and Stats -->
+    <div class="grid-16">
+      <!-- GRID row 1 -->
+        <span class="flex-row grid-16-span-8"><label>Nom</label><input class="fill" type="text" name="attr_character_name" placeholder="(character name)" title="@{Character}"/></span>
+        <span class="flex-row grid-16-span-8"><label>Joueur</label><input class="fill" type="text" name="attr_player_name" title="@{Player}"/></span>
+      <!-- GRID row 2 -->
+        <span class="flex-row grid-16-span-4"><label>Peuple</label><input class="fill" type="text" name="attr_race" /></span>
+        <span class="flex-row grid-16-span-4"><label>Classe</label><input class="fill" type="text" name="attr_class" title="@{Class}" /></span>
+        <span class="flex-row grid-16-span-4"><label>Niveau</label><input class="attr fill" type="text" name="attr_level" title="@{Level}" value="1" /></span>
+        <span class="flex-row grid-16-span-4"><label>XP</label><input class="attr fill" type="text" name="attr_xp" title="@{XP}" value="0" /></span>
+
+    <!-- GRID row 3 -->
+        <span class="grid-16-span-1">&nbsp;</span>
+        <span class="grid-16-span-1 label">Score</span>
+        <span class="grid-16-span-6 label">Bonus and Penalites</span>
+        <span class="flex-row grid-16-span-8">&nbsp;</span>        
+
+      <!-- GRID row 4 -->
+        <span class="flex-row grid-16-span-1"><label>For.</label></span>
+        <span class="flex-row grid-16-span-1"><input class="attr fill" type="text" name="attr_strength" title="@{Strength}" placeholder="0" value="0" /></span>
+          <!-- (<input type="text" name="attr_ExceptionalStrength" title="@{ExceptionalStrength}" value="0" min="0" max="100" />) -->
+          <!-- <button type="roll" name="roll_testattack" value="&{template:default} {{name=@{character_name}}} {{result=[[3d6 + @{strength}]]}}"></button><span class="dee">d</span> -->
+        <span class="flex-row grid-16-span-6"><input class="attr-mod fill" name="attr_strength_modifiers" type="text" /></span>
+        <span class="flex-row grid-16-span-4"><label>CA</label><input class="attr fill" type="text" name="attr_ac" title="@{ArmorClass}" value="9" /></span>
+        <span class="flex-row grid-16-span-4"><label>Bonus&nbsp;Combat</label><input class="attr fill" type="text" name="attr_fighting_capability" title="@{FightingCapability}" value="Man" /></span>
+      <!-- GRID row 5 -->
+        <span class="flex-row grid-16-span-1"><label>Int.</label></span>
+        <span class="flex-row grid-16-span-1"><input class="attr fill" type="text" name="attr_intelligence" title="@{Intelligence}" placeholder="0" value="0" /></span>
+          <!-- <button type="roll" name="roll_testattack" value="&{template:default} {{name=@{character_name}}} {{result=[[3d6 + @{intelligence}]]}}"></button><span class="dee">d</span> -->
+        <span class="flex-row grid-16-span-6"><input class="attr-mod fill" name="attr_intelligence_modifiers" type="text" /></span>
+        <span class="flex-row grid-16-span-4"><label>PV</label><input class="attr fill" type="text" name="attr_hp" title="@{HitPoints}" value="0" /></span>
+        <span class="flex-row grid-16-span-4"><label>PV&nbsp;Max</label><input class="attr fill" type="text" name="attr_maxhp" title="@{MaxHitPoints}" value="0" /></span>
+      <!-- GRID row 6 -->
+        <span class="flex-row grid-16-span-1"><label>Sag.</label></span>
+        <span class="flex-row grid-16-span-1"><input class="attr fill" type="text" name="attr_wisdom" title="@{Wisdom}" placeholder="0" value="0" /></span>
+        <!-- <button type="roll" name="roll_testattack" value="&{template:default} {{name=@{character_name}}} {{result=[[3d6 + @{wisdom}]]}}"></button><span class="dee">d</span> -->
+        <span class="flex-row grid-16-span-6"><input class=" attr-mod fill" name="attr_wisdom_modifiers" type="text" /></span>
+        <span class="flex-row grid-16-span-4">&nbsp;</span>
+        <span class="flex-row grid-16-span-4"><label>DV</label><input class="attr fill" type="text" name="attr_hd" title="@{HitDice}" value="0" /></span>
+      <!-- GRID row 7 -->
+        <span class="flex-row grid-16-span-1"><label>Con.</label></span>
+        <span class="flex-row grid-16-span-1"><input class="attr fill" type="text" name="attr_constitution" title="@{Constitution}" placeholder="0" value="0" /></span>
+        <!-- <button type="roll" name="roll_testattack" value="&{template:default} {{name=@{character_name}}} {{result=[[3d6 + @{constitution}]]}}"></button><span class="dee">d</span> -->
+        <span class="flex-row grid-16-span-6"><input class=" attr-mod fill" name="attr_constitution_modifiers" type="text" /></span>
+        <span class="flex-row grid-16-span-8">&nbsp;</span>
+      <!-- GRID row 8 -->
+        <span class="flex-row grid-16-span-1"><label>Dex.</label></span>
+        <span class="flex-row grid-16-span-1"><input class="attr fill" type="text" name="attr_dexterity" title="@{Dexterity}" placeholder="0" value="0" /></span>
+          <!-- <button type="roll" name="roll_testattack" value="&{template:default} {{name=@{character_name}}} {{result=[[3d6 + @{dexterity}]]}}"></button><span class="dee">d</span> -->
+        <span class="flex-row grid-16-span-6"><input class=" attr-mod fill" name="attr_dexterity_modifiers" type="text" /></span>
+        <span class="flex-row grid-16-span-8"><label>Jets&nbsp;sauveurs</label><input class="attr fill" type="text" name="attr_JS" title="@{JetSauveurs}" value="0" /></span>
+      <!-- GRID row 9 -->
+        <span class="flex-row grid-16-span-1"><label>Cha.</label></span>
+        <span class="flex-row grid-16-span-1"><input class="attr fill" type="text" name="attr_charisma" title="@{Charisma}" placeholder="0" value="0" /></span>
+          <!-- <button type="roll" name="roll_testattack" value="&{template:default} {{name=@{character_name}}} {{result=[[3d6 + @{charisma}]]}}"></button><span class="dee">d</span> -->
+        <span class="flex-row grid-16-span-6"><input class=" attr-mod fill" name="attr_charisma_modifiers" type="text" /></span>
+        <span class="flex-row grid-16-span-8">&nbsp;</span>
+      <!-- GRID row 10 -->
+    </div> <!-- END  Top Section, Characteristics and Stats -->
+
+    <!-- Middle Section, Languages, Saves, Misc. -->
+    <div class="lanuages-saves-misc">
+      <div class="lanuages-saves-misc-group">
+          <div class="flex-row label"><label>Métiers:</label></div>
+        <div class="grid-16">
+          <span class="flex-row grid-16-span-4"><label>Artisan</label><input class="attr fill" type="text" name="attr_metier_artisan" title="@{Metier_Artisan}" value="0" /></span>
+          <span class="flex-row grid-16-span-4"><label>Courtisan</label><input class="attr fill" type="text" name="attr_metier_courtisan" title="@{Metier_Courtisan}" value="0" /></span>
+          <span class="flex-row grid-16-span-4"><label>Erudit</label><input class="attr fill" type="text" name="attr_metier_erudit" title="@{Metier_Erudit}" value="0" /></span>
+          <span class="flex-row grid-16-span-4"><label>Voyageur</label><input class="attr fill" type="text" name="attr_metier_voyageur" title="@{Metier_Voyageur}" value="0" /></span>
+        </div>
+        <div class="flex-row label"><label>Sauvegardes:</label></div>
+        <div class="grid-16">
+          <span class="flex-row grid-16-span-4"><label>Souffle</label><input class="attr fill" type="text" name="attr_save_v_souffle" title="@{Save_v_Souffle}" value="0" /></span>
+          <span class="flex-row grid-16-span-4"><label>Mort</label><input class="attr fill" type="text" name="attr_save_v_mort" title="@{Save_v_Mort}" value="0" /></span>
+          <span class="flex-row grid-16-span-4"><label>Magie</label><input class="attr fill" type="text" name="attr_save_v_magie" title="@{Save_v_Magie}" value="0" /></span>
+          <span class="flex-row grid-16-span-4"><label>Poison</label><input class="attr fill" type="text" name="attr_save_v_poison" title="@{Save_v_Poison}" value="0" /></span>
+        </div>
+      <div class="flex-row lanuages-saves-misc-group"><label>Langues</label><input class="fill" type="text" name="attr_languages" title="@{Languages}" value="Common" /></div>
+      </div>
+      <div class="lanuages-saves-misc-group">
+        <div class="flex-row label"><label>Matrices&nbsp;de&nbsp;sorts:</label></div>
+        <div class="grid-16">
+          <span class="flex-row grid-16-span-4"><label>1</label><input class="attr fill" type="text" name="attr_Matrice1" title="@{Matrice1}" value="0" /></span>
+          <span class="flex-row grid-16-span-4"><label>2</label><input class="attr fill" type="text" name="attr_Matrice2" title="@{Matrice2}" value="0" /></span>
+          <span class="flex-row grid-16-span-4"><label>3</label><input class="attr fill" type="text" name="attr_Matrice3" title="@{Matrice3}" value="0" /></span>
+          <span class="flex-row grid-16-span-4"><label>4</label><input class="attr fill" type="text" name="attr_Matrice4" title="@{Matrice4}" value="0" /></span>
+        </div>
+      </div>
+    <div class="flex-row lanuages-saves-misc-group fill misc"><label>Notes:</label><textarea class="fill" name="attr_misc" title="@{Miscellaneous}"></textarea></div>
+    </div> <!-- END Middle Section, Languages, Saves, Misc. -->
+
+    <!-- Bottom Section, Equipment, Treasure, Coin, Spells -->
+    <div class="bottom grid-3">
+
+      <div class="equipment grid-3-item grid-3-item1">
+        <div class="label">Equipement</div>
+        <textarea class="textarea-fill" name="attr_equipment" title="@{Equipment}"  ></textarea>
+      </div> <!-- END equipment -->
+
+      <div class="treasure grid-3-item grid-3-item2">
+        <div class="label">Tresors</div>
+        <textarea class="textarea-fill" name="attr_treasure" title="@{Treasure}"  ></textarea>
+      </div> <!-- END treasure -->
+
+      <div class="spells-magic grid-3-item grid-3-item3">
+        <div class="label">Magie</div>
+        <textarea class="textarea-fill" name="attr_spells_magic" title="@{SpellsMagic}" ></textarea>
+      </div> <!-- END spells-magic -->
+
+      <div class="coin grid-3-item grid-3-item5">
+        <div class="label">Argent</div>
+        <div class="flex-row fill"><label>Or</label><input class="attr fill" type="text" name="attr_coin_gold" title="@{Gold}" /></div>
+      </div> <!-- END coin -->
+
+      <div class="encumbrance grid-3-item grid-3-item6">
+        <div class="label fill">Encombrement / Mouvement</div>
+        <textarea class="textarea-fill" name="attr_encumbrance" title="@{Encumbrance}" ></textarea>
+      </div> <!-- END encumbrance -->
+
+      <!-- <div class=" grid-3-item grid-3-item7"></div> -->
+
+      <!-- <div class=" grid-3-item grid-3-item8"></div> -->
+
+    </div> <!-- END Bottom Section, Equipment, Treasure, Coin, Spells -->
+
+  </div> <!-- END charsheet odd -->
